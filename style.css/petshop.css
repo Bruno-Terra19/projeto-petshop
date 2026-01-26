@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #F7F4EA;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.titulo-header {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0 10px;
+}
+
+#header .header-content .titulo-header h2 {
+    color: #4B352A;
+    font-weight: bold;
+}
+
+#header .header-content .titulo-header p {
+    font-size: 13px;
+}
+
+#header .header-content .logo-icon {
+    margin-top: 15px;
+}
+
+#header .header-content nav {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+#header .header-content .nav a {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#header .header-content .btnAgendar {
+    color: black;
+    font-weight: 600;
+    background-color: #ECDFCC;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#header .header-content .btnAgendar:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.35);
+    color: white;
+}
+
+#header .header-content .nav a:hover {
+    color: #AB886D;
+}
+
+.hero {
+    width: 100%;
+    min-height: 85vh;
+    background-image: url('/images/FundoHero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.hero .titulo-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 150px;
+    margin-bottom: 80px;
+}
+
+.hero .titulo-hero h1 {
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+}
+
+.hero .titulo-hero p {
+    font-size: 17px;
+    color: #50545e;
+}
+
+.hero .titulo-hero .beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.hero .titulo-hero .beneficios li {
+    color: #1f2937;
+    font-weight: 550;
+}
+
+.image-hero {
+    filter: drop-shadow(0 8px 22px rgba(109, 66, 30, 0.35));
+}
+
+.escolha h2 {
+    color: #4B352A;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 250px;
+}
+
+.escolha {
+    width: 100%;
+    padding: 0;
+}
+
+.escolha .motivos {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 250px;
+    position: relative;
+    background-color: #ECDFCC;
+    width: 100%;
+}
+
+.escolha .motivos .motivo h3 {
+    color: #4B352A;
+    font-weight: 900;
+    font-size: 23px;
+    margin: 18px 0 10px;
+}
+
+.escolha .motivos .motivo p {
+    font-size: 16px;
+}
+
+.escolha .motivos .motivo {
+    gap: 32px;
+    position: relative;
+    top: -100px;
+    z-index: 2;
+}
+
+.escolha .motivos img {
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.escolha .motivos img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.85);
+}
