@@ -27,7 +27,7 @@
             <nav class="nav">
                 <a href="">Agenda Geral</a>
             </nav>
-            <button class="btnAgendar">Agendar Agora</button>
+            <a href="#form" class="btnAgendar">Agendar Agora</a>
         </div>
     </header>
 
@@ -72,31 +72,92 @@
         </section>
 
         <section class="container comentarios">
-            <h2>Quem usa, recomenda! 💚</h2>
+            <h2>Quem usa, recomenda! 🐱</h2>
             <div class="grids-comentarios">
                 <div class="box-comentarios">
                     <img src="./images/Renato.png" alt="renato" width="60" height="60" class="avatar">
                     <h4>Renato Vieira</h4>
-                    <p>Tutor</p>
-                    <p>"Super prático! Agendei o banho do meu<br> cachorro em 2 minutos. Muito melhor que<br> ficar mandando mensagem no WhatsApp."</p>
+                    <span>Tutor</span>
+                    <p>"Super prático! Agendei o banho do meu cachorro em 2 minutos. Muito melhor que ficar mandando mensagem no WhatsApp."</p>
                 </div>
                 <div class="box-comentarios">
                     <img src="./images/Isabela.png" alt="isabela" width="60" height="60" class="avatar">
                     <h4>Isabela Soares</h4>
-                    <p>Dona de Pet Shop</p>
-                    <p>"Adorei a facilidade! Agendo os serviços do<br> meu gato sem precisar ligar ou mandar<br> mensagem. Tudo organizadinho."</p>
+                    <span>Dona de Pet Shop</span>
+                    <p>"Adorei a facilidade! Agendo os serviços do meu gato sem precisar ligar ou mandar mensagem. Tudo organizadinho."</p>
                 </div>
                 <div class="box-comentarios">
                     <img src="./images/Victor.png" alt="victor" width="60" height="60" class="avatar">
                     <h4>Victor Ribeiro</h4>
-                    <p>Tutor</p>
-                    <p>"Implementei o PetCare no meu pet shop e<br> a organização melhorou 100%. Agora<br> consigo gerenciar todos os agendamentos<br> em um só lugar."</p>
+                    <span>Tutor</span>
+                    <p>"Implementei o PetCare no meu pet shop e a organização melhorou 100%. Agora consigo gerenciar todos os agendamentos em um só lugar."</p>
                 </div>
             </div>
+        </section>
+
+        <section class="formulario">
+            <form id="form">
+                <h3>Novo Agendamento 📝</h3>
+                <div class="form-box">
+                    <label for="servico">Serviço *</label><br>
+                    <select id="servico" name="servico" required>
+                        <option value="selecione" class="select">Selecione um serviço</option>
+                        <option value="banho">Banho</option>
+                        <option value="tosa">Tosa</option>
+                        <option value="banho-tosa">Banho + Tosa</option>
+                        <option value="consulta">Consulta Veterinária</option>
+                        <option value="vacina">Vacinação</option>
+                        <option value="hospedagem">hospedagem</option>
+                    </select><br>
+                </div>
+                <div class="form-box">
+                    <label for="data">Data *</label><br>
+                    <input type="date" id="data" name="data" required>
+                </div>
+                <div class="form-box">
+                    <label for="horario">Horário *</label><br>
+                    <select id="horario" name="horario" required>
+                        <option value="selecione-horario" class="select">Selecione um horário</option>
+                        <option value="8:00">8:00</option>
+                        <option value="9:00">9:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                    </select><br>
+                </div>
+                <div class="form-box">
+                    <label for="nome-tutor">Nome do Tutor *</label><br>
+                    <input type="text" id="name" name="nomeTutor" placeholder="Seu nome completo" required><br>
+                </div>
+                <div class="form-box">
+                    <label for="nome-pet">Nome do Pet *</label><br>
+                    <input type="text" id="namePet" name="nomePet" placeholder="Nome do seu pet" required><br>
+                </div>
+                <div class="form-box">
+                    <label for="telefone">Telefone *</label><br>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required><br>
+                </div>
+                <button type="submit" id="btnSubmit">Confirmar Agendamento</button> 
+            </form>
         </section>
     </main>
     <footer class="container footer">
         <span>PetClub © 2026</span>
     </footer>
+    <script>
+        const inputData = document.getElementById('data');
+
+        const hoje = new Date().toISOString().split('T')[0];
+
+        inputData.min = hoje;    // bloqueia datas passadas
+        inputData.value = hoje;  // abre o calendário no dia atual
+    </script>
 </body>
 </html>

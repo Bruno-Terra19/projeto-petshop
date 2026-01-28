@@ -171,7 +171,7 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 100px 0 250px;
+    margin: 100px 0 280px;
 }
 
 .escolha {
@@ -192,7 +192,7 @@ select {
     color: #4B352A;
     font-weight: 900;
     font-size: 23px;
-    margin: 18px 0 10px;
+    margin: 30px 0 10px;
 }
 
 .escolha .motivos .motivo p {
@@ -200,9 +200,11 @@ select {
 }
 
 .escolha .motivos .motivo {
+    justify-content: center;
+    align-items: center;
     gap: 32px;
     position: relative;
-    top: -100px;
+    top: -150px;
     z-index: 2;
 }
 
@@ -215,4 +217,121 @@ select {
 .escolha .motivos img:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(109, 66, 30, 0.85);
+}
+
+.comentarios h2 {
+    display: flex;
+    justify-content: center;
+    color: #4B352A;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    margin: 100px 0 100px;
+}
+
+.grids-comentarios {
+    display: flex;
+    gap: 60px;
+}
+
+.box-comentarios {
+    background-color: #fffdfd;
+    border: 1px solid #ECDFCC;
+    border-radius: 16px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comentarios .grids-comentarios .box-comentarios .avatar {
+    border: 3px solid #4B352A;
+    border-radius: 999px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.comentarios .grids-comentarios .box-comentarios h4 {
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+
+.comentarios .grids-comentarios .box-comentarios span {
+    color: #50545e;
+    font-size: 15px;
+}
+
+.comentarios .grids-comentarios .box-comentarios p {
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box-comentarios:hover {
+    border: 1px solid #AB886D;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.25);
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 200px 0 80px;
+}
+
+.formulario #form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+    padding: 30px;
+    background-color: #fffdfd;
+    border: 1px solid #4B352A;
+    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.25);
+    border-radius: 20px;
+    max-width: 800px;
+}
+
+/* Título ocupa a linha inteira */
+.formulario h3 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Campos que devem ocupar a linha inteira */
+.form-box.full {
+    grid-column: 1 / -1;
+}
+
+/* Inputs padrão */
+.form-box input,
+.form-box select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4B352A;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-weight: 400;
+}
+
+.form-box label {
+    display: block;
+    font-weight: 500;
+}
+
+.formulario #form button {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 14px;
+    margin: 10px 0 0;
+    border-radius: 8px;
+    background-color: #4B352A;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.formulario #form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.25);
+    font-weight: 500;
 }
