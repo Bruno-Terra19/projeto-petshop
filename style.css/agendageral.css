@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+h1, h2, h3 {
+    color: #4B352A;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #F7F4EA;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 10px;
+}
+
+.titulo-header {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0 10px;
+}
+
+#header .header-content .titulo-header h2 {
+    font-weight: bold;
+}
+
+#header .header-content .titulo-header p {
+    font-size: 13px;
+}
+
+#header .header-content .logo-icon {
+    margin-top: 15px;
+}
+
+#header .header-content a {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#header .header-content .btnAgendar {
+    color: black;
+    font-weight: 600;
+    background-color: #ECDFCC;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#header .header-content .btnAgendar:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.35);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.dashboard {
+    min-height: 80vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-header h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.dashboard-header p {
+    font-size: 17px;
+}
+
+.dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.stat-card {
+    text-align: start;
+    padding: 20px 60px;
+    background-color: #F7F4EA;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.35);
+}
+
+.stat-number {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.stat-label {
+    color: #4B352A;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.dashboard-agendamentos {
+    margin-top: 50px;
+    background-color: #F7F4EA;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center  ;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.15);
+}
+
+.titulo-agendamento h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.titulo-agendamento p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.btnAgendar {
+    width: fit-content; /*Ele faz o elemento ter apenas a largura necessária para caber o conteúdo interno, e não ocupar 100% do espaço disponível. */
+    font-weight: 500;
+    background-color: #ECDFCC;
+    padding: 15px 26px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btnAgendar:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.35);
+}
+
+.footer {
+    border-top: 1px solid rgb(219, 219, 219);
+    width: 100%;
+    background-color: #F7F4EA;
+}
+
+.footer h3, h4, p, span {
+    color: #4B352A;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.footer-brand {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}

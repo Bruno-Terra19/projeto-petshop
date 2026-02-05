@@ -112,7 +112,6 @@ select {
 #header .header-content .btnAgendar:hover {
     transform: translateY(-1px);
     box-shadow: 0 10px 20px rgba(109, 66, 30, 0.35);
-    color: white;
 }
 
 #header .header-content .nav a:hover {
