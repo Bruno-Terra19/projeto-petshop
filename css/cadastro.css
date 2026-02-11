@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+h1, h2, h3 {
+    color: #4B352A;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #F7F4EA;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 10px;
+}
+
+.titulo-header {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0 10px;
+}
+
+#header .header-content .titulo-header h2 {
+    font-weight: bold;
+}
+
+#header .header-content .titulo-header p {
+    font-size: 13px;
+}
+
+#header .header-content .logo-icon {
+    margin-top: 15px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.btnAgenda {
+    color: black;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btnAgenda:hover {
+    transform: scale(1.1);
+    font-weight: 600;
+}
+
+.btnVoltar {
+    color: black;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* cubic-bezier - Define como a animação acontece no tempo (curva de aceleração).*/
+}
+
+.btnVoltar:hover {
+    transform: scale(1.1);
+    font-weight: 600;
+}
+
+.hero {
+    width: 100%;
+    min-height: 90vh;
+    background-image: url('../images/cadastro-concluido.png');
+    background-size: cover;
+    background-position: center 65%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 80px;
+}
+
+.hero-titulo {
+    border: 1px solid #4B352A;
+    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.25);
+    border-radius: 25px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    transform: translate(90px);
+}
+
+.hero-titulo h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero-titulo h4 {
+    font-size: 17px;
+    font-weight: 450;
+}
+
+.hero-titulo .icon {
+    width: 70px;
+    height: 70px;
+
+    background-color: #2ecc71;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+
+    font-size: 32px;
+    font-weight: bold;
+
+    box-shadow: 0 8px 16px rgba(46, 204, 113, 0.35);
+}
+
+.footer {
+    border-top: 1px solid rgb(219, 219, 219);
+    width: 100%;
+    background-color: #F7F4EA;
+}
+
+.footer h3, h4, p, span {
+    color: #4B352A;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.footer-brand {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}

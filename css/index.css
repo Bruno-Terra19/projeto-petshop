@@ -317,13 +317,17 @@ select {
     font-weight: 600;
 }
 
-.formulario #form button {
+.form-box.btn-box {
     grid-column: 1 / -1;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#btnSubmit {
     font-size: 22px;
     font-weight: 400;
     padding: 14px;
-    margin: 10px 150px 0;
+    margin-top: 20px;
     border-radius: 8px;
     background-color: #4B352A;
     color: white;
@@ -331,7 +335,7 @@ select {
     cursor: pointer;
 }
 
-.formulario #form button:hover {
+#btnSubmit:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(109, 66, 30, 0.25);
     font-weight: 500;

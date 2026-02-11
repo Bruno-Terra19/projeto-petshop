@@ -88,27 +88,19 @@ h1, h2, h3 {
 
 #header .header-content .logo-icon {
     margin-top: 15px;
-}
+}   
 
-#header .header-content a {
+.btnVoltar {
     color: black;
-    font-size: 15px;
-    font-weight: 600;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* cubic-bezier - Define como a animação acontece no tempo (curva de aceleração).*/
 }
 
-#header .header-content .btnAgendar {
-    color: black;
+.btnVoltar:hover {
+    transform: scale(1.1);
     font-weight: 600;
-    background-color: #ECDFCC;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#header .header-content .btnAgendar:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.35);
 }
 
 .hero {

@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css/petshop.css">
-    <link rel="stylesheet" href="./style.css/responsive.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <header id="header">
@@ -96,7 +95,7 @@
         </section>
 
         <section class="formulario">
-            <form id="form">
+            <form id="form" action="cadastro.html">
                 <h3>Novo Agendamento 📝</h3>
                 <div class="form-box">
                     <label for="servico">Serviço *</label><br>
@@ -144,7 +143,11 @@
                     <label for="telefone">Telefone *</label><br>
                     <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required><br>
                 </div>
-                <button type="submit" id="btnSubmit">Confirmar Agendamento</button> 
+                <div class="form-box btn-box">
+                    <button id="btnSubmit" type="submit">
+                        Confirmar Agendamento
+                    </button>
+                </div>
             </form>
         </section>
     </main>
@@ -156,7 +159,7 @@
 
             <div class="footer-links">
                 <a href="#container-hero">Início</a>
-                <a href="/agendageral.html">Agenda Geral</a>
+                <a href="agendageral.html">Agenda Geral</a>
             </div>
 
             <div class="footer-contacts">
