@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,24 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
     <header id="header">
         <div class="container header-content">
             <div class="titulo-header">
                 <div class="logo-icon">
-                    <img src="./images/dog-cat-pet-paw-animal-hand-drawn-organic-line-doodle-png.png" alt="patas de cachorro" class="patas" width="40" height="30">
+                    <img src="./images/dog-cat-pet-paw-animal-hand-drawn-organic-line-doodle-png.png"
+                        alt="patas de cachorro" class="patas" width="40" height="30">
                 </div>
                 <div class="logo-text">
                     <h2>PetClub</h2>
                     <p>Agendamento simples para Pets</p>
-                </div> 
+                </div>
             </div>
             <nav class="nav">
                 <a href="admin.html">Agenda Geral</a>
@@ -55,17 +59,20 @@
                 <div class="motivo card1">
                     <img src="./images/coraçao-com-patas.jpg" alt="agendamento rapido" width="300" height="400">
                     <h3>Agendamento Rápido</h3>
-                    <p>Agende os cuidados do seu pet com<br> rapidez, escolhendo o melhor horário<br> sem ligações, filas ou complicações.</p>
+                    <p>Agende os cuidados do seu pet com<br> rapidez, escolhendo o melhor horário<br> sem ligações,
+                        filas ou complicações.</p>
                 </div>
                 <div class="motivo card2">
                     <img src="./images/cat-dog.png" alt="menos whatsapp" width="300" height="400">
                     <h3>Menos WhatsApp</h3>
-                    <p>Veja todos os agendamentos<br> do seu pet organizados em<br> um só lugar, sem precisar<br> trocar mensagens ou ficar<br> perguntando.</p>
+                    <p>Veja todos os agendamentos<br> do seu pet organizados em<br> um só lugar, sem precisar<br> trocar
+                        mensagens ou ficar<br> perguntando.</p>
                 </div>
                 <div class="motivo card3">
                     <img src="./images/dog-natureza.jpg" alt="experiencia" width="300" height="400">
                     <h3>Conforto = Felicidade</h3>
-                    <p>Um ambiente pensado para<br> o bem-estar do seu pet, com<br> serviços organizados,<br> atendimento humanizado e<br> uma experiência simples<br> para você.</p>
+                    <p>Um ambiente pensado para<br> o bem-estar do seu pet, com<br> serviços organizados,<br>
+                        atendimento humanizado e<br> uma experiência simples<br> para você.</p>
                 </div>
             </div>
         </section>
@@ -77,19 +84,22 @@
                     <img src="./images/Renato.png" alt="renato" width="60" height="60" class="avatar">
                     <h4>Renato Vieira</h4>
                     <span>Tutor</span>
-                    <p>"Super prático! Agendei o banho do meu cachorro em 2 minutos. Muito melhor que ficar mandando mensagem no WhatsApp."</p>
+                    <p>"Super prático! Agendei o banho do meu cachorro em 2 minutos. Muito melhor que ficar mandando
+                        mensagem no WhatsApp."</p>
                 </div>
                 <div class="box-comentarios">
                     <img src="./images/Isabela.png" alt="isabela" width="60" height="60" class="avatar">
                     <h4>Isabela Soares</h4>
                     <span>Dona de Pet Shop</span>
-                    <p>"Adorei a facilidade! Agendo os serviços do meu gato sem precisar ligar ou mandar mensagem. Tudo organizadinho."</p>
+                    <p>"Adorei a facilidade! Agendo os serviços do meu gato sem precisar ligar ou mandar mensagem. Tudo
+                        organizadinho."</p>
                 </div>
                 <div class="box-comentarios">
                     <img src="./images/Victor.png" alt="victor" width="60" height="60" class="avatar">
                     <h4>Victor Ribeiro</h4>
                     <span>Tutor</span>
-                    <p>"Implementei o PetCare no meu pet shop e a organização melhorou 100%. Agora consigo gerenciar todos os agendamentos em um só lugar."</p>
+                    <p>"Implementei o PetCare no meu pet shop e a organização melhorou 100%. Agora consigo gerenciar
+                        todos os agendamentos em um só lugar."</p>
                 </div>
             </div>
         </section>
@@ -100,7 +110,7 @@
                 <div class="form-box">
                     <label for="servico">Serviço *</label><br>
                     <select id="servico" name="servico" required>
-                        <option value="selecione" class="select">Selecione um serviço</option>
+                        <option value="" class="select">Selecione um serviço</option>
                         <option value="banho">Banho</option>
                         <option value="tosa">Tosa</option>
                         <option value="banho-tosa">Banho + Tosa</option>
@@ -116,7 +126,7 @@
                 <div class="form-box">
                     <label for="horario">Horário *</label><br>
                     <select id="horario" name="horario" required>
-                        <option value="selecione-horario" class="select">Selecione um horário</option>
+                        <option value="" class="select">Selecione um horário</option>
                         <option value="8:00">8:00</option>
                         <option value="9:00">9:00</option>
                         <option value="10:00">10:00</option>
@@ -176,10 +186,17 @@
     <script>
         const inputData = document.getElementById('data');
 
+        if (!data.value) {
+            e.preventDefault();
+            alert('Por favor, selecione uma data.');
+            data.focus();
+        }
+
         const hoje = new Date().toISOString().split('T')[0];
 
         inputData.min = hoje;    // bloqueia datas passadas
         inputData.value = hoje;  // abre o calendário no dia atual
     </script>
 </body>
+
 </html>
