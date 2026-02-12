@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+h1, h2, h3 {
+    color: #4B352A;
+}
+
+body {
+    background-image: url('../images/fundo-admin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#header {
+    width: 100%;
+    background: #F7F4EA;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 10px;
+}
+
+.titulo-header {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0 10px;
+}
+
+#header .header-content .titulo-header h2 {
+    font-weight: bold;
+}
+
+#header .header-content .titulo-header p {
+    font-size: 13px;
+}
+
+#header .header-content .logo-icon {
+    margin-top: 15px;
+}
+
+.btnVoltar {
+    color: black;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* cubic-bezier - Define como a animação acontece no tempo (curva de aceleração).*/
+}
+
+.btnVoltar:hover {
+    transform: scale(1.1);
+    font-weight: 600;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    transform: translate(0, 110px);
+}
+
+.form {
+    background-color: #fffdfd;
+    border: 1px solid #4B352A;
+    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.25);
+    border-radius: 20px;
+    padding: 25px 40px;
+}
+
+.form h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.form h4 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.password-wrapper input {
+    width: 100%;
+    border: 1px solid #4B352A;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-weight: 400;
+    outline: none;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none; /* O ícone funciona só como botão. Visual mais limpo e profissional */
+  opacity: 0.6; /* controla a transparencia */
+}
+
+.toggle-password:hover {
+  opacity: 1;
+}
+
+#btnAdmin {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 9px 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #4B352A;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#btnAdmin:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(109, 66, 30, 0.25);
+    font-weight: 500;
+}
+
+
+@media (max-width: 1200px) {
+.container {
+width: 100%;
+}
+
+
+.hero {
+transform: translate(0, 90px);
+}
+
+
+.form {
+padding: 25px 30px;
+}
+}
+
+@media (max-width: 992px) {
+.header-content {
+flex-direction: column;
+gap: 12px;
+}
+
+
+.titulo-header {
+margin: 10px 0;
+}
+
+
+.hero {
+transform: translate(0, 70px);
+padding: 0 20px;
+}
+
+
+.form {
+width: 100%;
+max-width: 420px;
+}
+}
+
+@media (max-width: 768px) {
+html {
+font-size: 15px;
+}
+
+
+body {
+background-position: center;
+}
+
+
+.hero {
+transform: none;
+margin-top: 40px;
+padding: 0 20px;
+}
+
+
+.form {
+width: 100%;
+padding: 22px 20px;
+border-radius: 16px;
+}
+
+
+.form h2 {
+font-size: 22px;
+}
+
+
+.form h4 {
+font-size: 14px;
+}
+
+
+#btnAdmin {
+width: 100%;
+padding: 12px 0;
+font-size: 16px;
+}
+}
+
+@media (max-width: 480px) {
+html {
+font-size: 14px;
+}
+
+
+.form h2 {
+font-size: 20px;
+}
+
+
+.toggle-password {
+font-size: 16px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  body {
+    background-position: center top;
+  }
+
+  .hero {
+    min-height: calc(100vh - 120px);
+    transform: none;              /* REMOVE o problema */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .form {
+    margin-top: 0;
+    max-width: 420px;
+    width: 100%;
+  }
+
+}

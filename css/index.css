@@ -379,3 +379,159 @@ select {
 .footer-bottom {
     margin-top: 20px;
 }
+
+
+
+@media (max-width: 1366px) {
+    .escolha .motivos {
+        justify-content: center;
+        gap: 40px;    
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .escolha .motivos {
+        gap: 30px;
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .header-content {
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    #header .header-content nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        padding: 0 40px;
+        min-height: auto;
+    }
+
+    .titulo-hero {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .titulo-hero h1 {
+        font-size: 46px;
+    }
+
+    .ecolha h2 {
+        margin: 80px 0 180px;
+    }
+
+    .escolha .motivos {
+        padding: 0 80px;
+        gap: 40px;
+    }
+
+    .grids-comentarios {
+        gap: 30px;
+    }
+
+    .formulario {
+        margin: 120px 20px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #header .header-content nav {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .titulo-hero h1 {
+        font-size: 38px;
+    }
+
+    .titulo-hero p {
+        font-size: 16px;
+    }
+
+    .image-hero {
+        margin-top: 30px;
+        max-width: 80%;
+    }
+
+    .escolha h2 {
+        margin: 80px 0 80px;
+        font-size: 32px;
+    }
+
+    .escolha .motivos {
+        align-items: center;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .escolha .motivos .motivo {
+        top: 0;
+        text-align: center;
+    }
+
+    .grids-comentarios {
+        flex-direction: column;
+    }
+
+    .formulario #form {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .titulo-hero h1 {
+        font-size: 30px;
+    }
+
+    .comentarios h2,
+    .escolha h2 {
+        font-size: 28px;
+    }
+
+    #btnSubmit {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .footer-brand {
+        font-size: 18px;
+    }
+}
